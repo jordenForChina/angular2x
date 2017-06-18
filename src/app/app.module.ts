@@ -9,6 +9,8 @@ import { ContackComponent } from './contack/contack.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 import { AppRouteModule } from './app-route/app-route.module'
+
+import { HotelIndexModule } from './hotel-index/hotel-index.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,8 @@ import { AppRouteModule } from './app-route/app-route.module'
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRouteModule
+    AppRouteModule,
+    HotelIndexModule
   ],
   providers: [],
   bootstrap: [AppComponent]

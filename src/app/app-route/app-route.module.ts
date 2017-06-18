@@ -5,7 +5,7 @@ import { RouterModule,Routes } from '@angular/router';
 import { HomeComponent } from './../home/home.component';
 import { ContackComponent } from './../contack/contack.component';
 import { PageNotFoundComponent } from './../page-not-found/page-not-found.component';
-
+// import { HotelIndexComponent } from './../hotel-index/hotel-index/hotel-index.component';
 const  appRoutes:Routes = [
   {
     path:'',
@@ -21,6 +21,10 @@ const  appRoutes:Routes = [
     component:ContackComponent
   },
   {
+    path:'index',
+    loadChildren:'./../hotel-index/hotel-index.module#HotelIndexModule'
+  },
+  {
     path:'**',
     component:PageNotFoundComponent
   }  
@@ -29,7 +33,7 @@ const  appRoutes:Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes,{ useHash:true })
   ],
   exports:[RouterModule],
   declarations: []
