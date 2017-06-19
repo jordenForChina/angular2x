@@ -11,12 +11,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { AppRouteModule } from './app-route/app-route.module'
 
 import { HotelIndexModule } from './hotel-index/hotel-index.module';
+import { PageComponent } from './page/page.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ContackComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    PageComponent
   ],
   imports: [
     BrowserModule,

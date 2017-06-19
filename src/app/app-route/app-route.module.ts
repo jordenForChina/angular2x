@@ -5,6 +5,7 @@ import { RouterModule,Routes } from '@angular/router';
 import { HomeComponent } from './../home/home.component';
 import { ContackComponent } from './../contack/contack.component';
 import { PageNotFoundComponent } from './../page-not-found/page-not-found.component';
+import { PageComponent} from './../page/page.component';
 // import { HotelIndexComponent } from './../hotel-index/hotel-index/hotel-index.component';
 const  appRoutes:Routes = [
   {
@@ -19,6 +20,10 @@ const  appRoutes:Routes = [
   {
     path:'contack',
     component:ContackComponent
+  },
+  {
+    path:'page',
+    component:PageComponent
   },
   {
     path:'index',
