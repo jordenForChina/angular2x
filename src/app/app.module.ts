@@ -11,6 +11,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { AppRouteModule } from './app-route/app-route.module'
 
 import { HotelIndexModule } from './hotel-index/hotel-index.module';
+import { CommonModuleModule } from './common-module/common-module.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { HotelIndexModule } from './hotel-index/hotel-index.module';
     FormsModule,
     HttpModule,
     AppRouteModule,
-    HotelIndexModule
+    HotelIndexModule,
+    CommonModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
