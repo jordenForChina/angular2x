@@ -20,4 +20,7 @@ export class HostListenerDirective {
     this.hightLight('red');
   }
 
+ @HostListener('click') onClick(){
+   this.hightLight('white')
+ }
 }

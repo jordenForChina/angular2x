@@ -4,9 +4,8 @@ import { Directive,ElementRef, Input } from '@angular/core';
   selector: '[appBase]'
 })
 export class BaseDirective {
-
   constructor(el:ElementRef) {
-    el.nativeElement.style.backgroundColor = 'red';
+    el.nativeElement.style.backgroundColor = 'yellow';
    }
 
 
