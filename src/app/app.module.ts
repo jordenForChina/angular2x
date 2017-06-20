@@ -7,11 +7,12 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ContackComponent } from './contack/contack.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-
+import { PageComponent } from './page/page.component';
 import { AppRouteModule } from './app-route/app-route.module'
 
 import { HotelIndexModule } from './hotel-index/hotel-index.module';
-import { PageComponent } from './page/page.component';
+import { CommonComponentModule } from './common/common.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { PageComponent } from './page/page.component';
     FormsModule,
     HttpModule,
     AppRouteModule,
-    HotelIndexModule
+    HotelIndexModule,
+    CommonComponentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
